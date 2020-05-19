@@ -1,9 +1,10 @@
 const http = require('http');
 const os = require('os');
 
-function IPAdress() {
-  
-}
+var server = http.createServer(function functionNamere(request, respons) {
+  respons.writeHead(200, {"Content-type": "text/html"});
+  respons.write("Hello");
+  respons.end();
+})
 
-//Jag vet inte hur jag ska göra
-app.listen(3000);
+app.listen(8000);
